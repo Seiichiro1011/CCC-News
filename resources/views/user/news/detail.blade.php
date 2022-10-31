@@ -14,7 +14,7 @@
         <div class="news-header">
             <h2 class="text-decoration-underline fw-bold"> {{ $news->title }}</h2>
             <p>News site: &nbsp;{{ $news->source->name }}</p>
-            <p>Published: &nbsp;{{ $news->post_date }}</p>
+            <p>Published: &nbsp;{{ $news->published_at }}</p>
             <p class="fw-bold"> {{ $news->author }}</p>
         </div>
         <div class="row">
