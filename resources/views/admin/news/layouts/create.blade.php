@@ -164,7 +164,7 @@
                 <label for="post-date-time" class="form-label label-width">Date</label>
                 <input type="datetime-local" name="post_date_time" id="post-date_time"
                     class="form-control form-width"
-                    value="{{ request()->is('admin/news/create') ? old('post_date') : old('post_date', $news->post_date) }}">
+                    value="{{ request()->is('admin/news/create') ? old('post_date') : old('post_date', $news->post_date_time) }}">
             </div>
         </div>
     </div>

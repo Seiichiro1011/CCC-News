@@ -22,7 +22,7 @@
             <div class="d-flex justify-content-between">
                 <div>
                     <span class="news-list-clock"><i class="fa-regular fa-clock"></i>
-                        {{ date('n/j(D)', strtotime($news->post_date)) }}</span>
+                        {{ date('n/j(D)', strtotime($news->post_date_time)) }}</span>
                 </div>
                 <div>
                     <span class="badge bg-opacity-50 news-list-badge">{{ $news->country->name }}</span>
