@@ -23,7 +23,7 @@
                 <div class="text-center mt-2">
                     <label class="px-3 profile-avatar-upload">
                         <input type="file" name="avatar" class="d-none" id="avatar">
-                        <i class="fa fa-cloud-upload"></i> Upload iamge
+                        <i class="fa fa-cloud-upload"></i> Upload image
                     </label>
                 </div>
                 @error('avatar')
