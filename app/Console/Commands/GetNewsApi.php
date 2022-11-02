@@ -57,7 +57,7 @@ class GetNewsApi extends Command
                 // 'category' => 'travel',
                 // 'country' => 'us'
                 // 'sources' => 'Business Insider South Africa',
-                
+
             ];
 
             if ($nextPage) {
@@ -70,7 +70,7 @@ class GetNewsApi extends Command
             $nextPage = $api_news->nextPage ?? null;
             $counter++;
 
-            if ($counter == 199) {
+            if ($counter == 50) {
                 $canFetch = false;
             }
         }
@@ -79,14 +79,14 @@ class GetNewsApi extends Command
             return isset($n->content);
         });
 
-       
+
         $data = fractal() //This fractal is responsible for transforming our data. it is being install by a composer  (composer.json line 18)
             ->collection(collect($news))
             ->transformWith(new NewsApiTransformer($countries, $categories)) // if it does not have this line it makes many error deu to so many quarry //
             ->toArray();
-            
-       
-        
+
+
+
         News::insert($data['data']);
     }
 }
