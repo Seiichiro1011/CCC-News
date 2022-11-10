@@ -46,6 +46,9 @@ HTML, CSS, Vanilla JS, Jquery, Laravel, Mysql
 ## 使用API
 <a href="https://newsdata.io/" target="_blank"> NewsData.io </a>
 
+## 開発方法
+スクラム開発
+
 ## 使用ツール
 | リンク | ツール名 |
 | :--- | :--- |
