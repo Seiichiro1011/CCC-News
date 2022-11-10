@@ -1,87 +1,31 @@
-## Setup
+# ニュースアプリ 「CCC News」
+CCC=Customize / Compare / Communication
 
-##### Check your ~/.ssh/id_rsa.pub 
-`less ~/.ssh/id_rsa.pub` (Mac)
+## 概要
 
-`type ~/.ssh/id_rsa.pub` (Windows)
+## テストアカウント
+◎User account
+- メール : test1@test.com
+- パスワード : password
 
-if you don't have `.ssh/id_rsa.pub`
+◎Admin account
+- メール : admin@admin.com
+- パスワード : password
 
-`ssh-keygen -t rsa -C "your_github_email@example.com"` 
+## 公開URL
 
-Github > Settings > SSH and GPG keys
+https://enigmatic-scrubland-39051.herokuapp.com/ (Herokuを使用)
 
-##### install php 
-`php -v`
+## 使用技術
+HTML, CSS, Vanilla JS, Jquery, Laravel, Mysql
 
-if you don't have any PHP version
+## 使用ツール
+| リンク | ツール名 |
+| :--- | :--- |
+| <a href="https://docs.google.com/document/d/1Vc4uAvCYmV-sIGeaUwQM-iwvLnw_xyrxIHZQ5Djuwsk/edit?usp=sharing"> 要件定義 </a>| Google document|
+| <a href="https://www.figma.com/file/iJnNgNs5xrwp5EgvpLKXpO/4th_news_app?node-id=0%3A1">サイトデザイン <a/> | Figma |
+| <a href="https://docs.google.com/spreadsheets/d/1CpEavljlidOtRxBoHjlzhHW5zaAxxPdA/edit?usp=sharing&ouid=114750385200206495733&rtpof=true&sd=true">DBデザイン　・ URL デザイン </a> | Google spread sheet |
+| <a href="https://docs.google.com/spreadsheets/d/1lHM8dscjkFqJFGENI1s-sDoOK9HfapVV/edit?usp=sharing&ouid=114750385200206495733&rtpof=true&sd=true">タイムライン </a>| Google spread sheet|
+| <a href="https://docs.google.com/presentation/d/1YqECG12mgv3sbMmF50gKspaJ8whR_LpzSRUvvKEoU1A/edit?usp=sharing"> 簡易サイトUI </a>| Google slide |
+| <a href="https://docs.google.com/spreadsheets/d/170mbCMqw2jpn9p5ywwXl6OJYhSKuHudbozhdL8qgqFY/edit?usp=sharing"> テストケース </a> | Google spread sheet|
 
-
-##### install mysql 
-if you don't have mysql `brew install mysql`
-
-##### 1. Clone repository
-`git clone git@github.com:kredo-grobal-it-intern/kredo_news.git`
-
-##### 2. Go to your directory
-`cd Desktop`
-
-`cd kredo_news`
-
-##### 3. Create .env
-`cp .env.example .env`
-
-##### 4. Modify .env L12
-<img width="400" alt="Screen Shot 2022-07-12 at 3 43 08 PM" src="https://user-images.githubusercontent.com/105486119/178426049-b936326c-e467-48d4-aca6-4b2103e5e6f0.png">
-
-##### 5. Install Composer Libraries
-`composer install`
-
-##### 6. Setup Environment
-`mysql -u root -p`
-
-enter your password
-
-`create database kredo_news;`
-
-##### 7. Run migration and seeder
-`php artisan migrate`
-
-`php artisan db:seed`
-
-##### 8. make images folder & Run storage:link
-`mkdir storage/app/public/images`
-
-`php artisan storage:link`
-
-##### 9. Run npm
-`npm install` 
-
-if you didn't node plese install
-https://codelikes.com/mac-node-install/
-
-`npm run dev`
-
-##### 10. Set Application key
-`php artisan key:generate`
-
-##### 11. Server start
-`php artisan serve`
-
-##### 12. Visit a website
-http://127.0.0.1:8000/
-
-##### Set Sequel Ace
-<img width="400" alt="Screen Shot 2022-06-10 at 4 32 39 PM" src="https://user-images.githubusercontent.com/105486119/173014301-bf3c0b08-ae1a-48fa-930b-d13a8f8674b7.png">
-
-Name: localhost/kredo_news
-
-HOST: localhost
-
-USERNAME: root
-
-PASSWORD:     
-
-DATABASE: kredo_news
-
-PORT: 3306
