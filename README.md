@@ -41,7 +41,7 @@ CCC=Customize / Compare / Communication
 - パスワード : password
 
 ## 使用技術
-HTML, CSS, Vanilla JS, Jquery, Laravel, Mysql
+HTML, CSS, Bootstrap, Vanilla JS, Jquery, Laravel, Mysql
 
 ## 使用API
 <a href="https://newsdata.io/" target="_blank"> NewsData.io </a>
