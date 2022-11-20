@@ -11,7 +11,7 @@
 @section('content')
 <div class="container">
     <div class="header-section mb-5">
-        <img src="{{asset('images/top_heading.webp')}}" class="header-section-image">
+        <img src="{{asset('images/top_heading.webp')}}" class="header-section-image" alt="top_haeading">
         <h1 class="header-section-title">Top news <br class="header-section-br">from world regions</h1>
     </div>
     @foreach ($news_list as $country_name => $country_news)

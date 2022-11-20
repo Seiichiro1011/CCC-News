@@ -43,10 +43,10 @@
                     <a href="{{ route('news.category', 3)}}" class="text-reset footer-list-item">Sports</a>
                 </li>
                 <li class="text-gray mb-2">
-                    <a href="" class="text-reset footer-list-item">Subscribe</a>
+                    <a href="#" class="text-reset footer-list-item">Subscribe</a>
                 </li>
                 <li class="text-gray mb-2">
-                    <a href="" class="text-decoration-none">&nbsp;</a>
+                    <a href="#" class="text-decoration-none">&nbsp;</a>
                 </li>
             </ul>
         </div>
