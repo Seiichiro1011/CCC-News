@@ -8,7 +8,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title')</title>
+    @hasSection('title')
+        <title>@yield('title') | {{ config('app.name') }}</title>
+    @else
+        <title>{{ config('app.name') }}</title>
+    @endif
 
     <meta name="description"
         content="The best of the CCC, with the latest news and sport headlines, and much more from all over the world.
