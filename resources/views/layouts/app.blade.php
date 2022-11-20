@@ -41,19 +41,21 @@
     <link href="{{ mix('css/footer.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{ asset('images/news_favicon.webp') }}">
     @yield('style')
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNZC58S384"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZNZC58S384');
+    </script>
+    
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNZC58S384"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-ZNZC58S384');
-</script>
 
 <body>
     <div id="app">
