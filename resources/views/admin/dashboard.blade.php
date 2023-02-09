@@ -43,7 +43,7 @@
                         <i class="fa-solid fa-comments"></i>
                     </div>
                     <div class="ms-3">
-                        <h2>{{ number_format($news->whereNull('deleted_at')->count()) }} <span class="line-sm">Total comments</span></h2>
+                        <h2>{{ number_format($comments->count()) }} <span class="line-sm">Total comments</span></h2>
                         <p class="line-md">Total comments</p>
                     </div>
                 </div>
