@@ -40,14 +40,14 @@
                         <td>
                             @if ($news->image == null)
                                 <a href="{{ route('news.show', $news->id) }}"><img
-                                        src="{{ asset('images/news/no_image.webp') }}" alt="News Image"
+                                        src="{{ asset('images/news/no_image.webp') }}" onerror="this.src='{{ asset('images/news/no_image.webp') }}'" alt="News Image"
                                         class="news-image"></a>
                             @elseif ($news->is_api)
-                                <a href="{{ route('news.show', $news->id) }}"><img src="{{ url($news->image) }}"
+                                <a href="{{ route('news.show', $news->id) }}"><img src="{{ url($news->image) }}" onerror="this.src='{{ asset('images/news/no_image.webp') }}'"
                                         alt="News Image" class="news-image"></a>
                             @else
                                 <a href="{{ route('news.show', $news->id) }}"><img
-                                        src="{{ asset('images/news/' . $news->image) }}" alt="News Image"
+                                        src="{{ asset('images/news/' . $news->image) }}" onerror="this.src='{{ asset('images/news/no_image.webp') }}'" alt="News Image"
                                         class="news-image"></a>
                             @endif
                         </td>

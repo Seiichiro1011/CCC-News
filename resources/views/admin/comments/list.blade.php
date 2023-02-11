@@ -51,7 +51,7 @@
                         <td class="text-start username-width">
                             @if ($comment->user->avatar)
                                 <a href="{{ route('user.profile.show', $comment->user->id) }}" class="avatar-name-align">
-                                    <img src="{{ asset('images/avatars/' . $comment->user->avatar) }}" alt=""
+                                    <img src="{{ asset('images/avatars/' . $comment->user->avatar) }}" onerror="this.src='{{ asset('images/news/no_image.webp') }}'" alt=""
                                         class="avatar">
                                     {{ $comment->user->username }}
                                 </a>
