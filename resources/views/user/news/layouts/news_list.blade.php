@@ -4,10 +4,10 @@
         <a href="{{ route('news.show', $news->id) }}"><img src="{{ asset('images/news/no_image.webp') }}" alt="News Image"
                 class="news-list-image w-100"></a>
     @elseif ($news->is_api)
-        <a href="{{ route('news.show', $news->id) }}"><img src="{{ url($news->image) }}" alt="News Image"
+        <a href="{{ route('news.show', $news->id) }}"><img src="{{ url($news->image) }}" onerror="this.src='{{ asset('images/news/no_image.webp') }}'" alt="News Image"
                 class="news-list-image w-100"></a>
     @else
-        <a href="{{ route('news.show', $news->id) }}"><img src="{{ asset('images/news/' . $news->image) }}"
+        <a href="{{ route('news.show', $news->id) }}"><img src="{{ asset('images/news/' . $news->image) }}" onerror="this.src='{{ asset('images/news/no_image.webp') }}'"
                 alt="News Image" class="news-list-image w-100"></a>
     @endif
     <h3 class="news-list-heading fw-bold mt-3"><a href="{{ route('news.show', $news->id) }}"
